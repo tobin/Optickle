@@ -184,7 +184,7 @@ function varargout = tickle(opt, pos, f, nDrive, nField_tfAC)
 
   % Build DC outputs
   varargout{1} = fDC;
-  varargout{2} = sigDC;
+  varargout{2} = SigDC(opt, sigDC);
   
   % if AC is not needed, just end here
   if ~isAC
